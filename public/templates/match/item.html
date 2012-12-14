@@ -1,0 +1,30 @@
+﻿<h3>Match du <%=date %></h3>
+<% var lbl = present ? "Se désinscrire" : "Jouer !" %>
+<% var lblR = presentR ? "Ne plus remplacer..." : "Remplacer..." %>
+<div data-role="fieldcontain">
+    <a href="#" id="play" class="play" type="button" data-ajax="false" data-role="button" data-inline="true" <% if (!present && full) {%>disabled="true" <%} %> data-theme="<%=present ? 'a' : 'b' %>"><%=lbl %></a>
+    <a href="#" id="remp" class="remp" type="button" data-ajax="false" data-role="button" data-inline="true" data-theme="<%=presentR ? 'e' : 'c' %>"><%=lblR %></a>
+</div>
+<h2>
+    <% if(joueurs.length == 0) { %>
+    Pas de joueurs...
+    <% }else{ %>
+    Joueurs
+ </h2>
+    <ol data-role="listview" data-inset="true" data-theme="c">
+    <% _.each(joueurs, function(joueur){ %>
+        <li><%=joueur %></li>
+    <% }); }%>
+    </ol>
+
+<h2>
+    <% if(remplacants.length == 0) { %>
+    Pas de remplaçants...
+    <% }else{ %>
+    Remplacants
+</h2>
+    <ol data-role="listview" data-inset="true" data-theme="c">
+    <% _.each(remplacants, function(remplacants){ %>
+        <li><%=remplacants %></li>
+    <% });} %>
+    </ol>

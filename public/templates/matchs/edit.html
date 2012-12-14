@@ -1,0 +1,12 @@
+﻿<% function field(type, id, label, value){%>
+	<div id="<%=id%>" class="fieldset field-<%=type%>">
+		<label><%=label %></label>
+		<div class="fieldwrap">
+			<input type="<%=type%>" name="<%=id%>" value="<%=value%>" placeholder="<%=label%>" />
+		</div>
+	</div>
+<% } %>
+<% field('text', 'MatchDate', 'Date', dateMatch);%>
+<% field('text', 'MatchHeure', 'Heure', hour);%>
+<% field('text', 'MatchNb', 'Nombre de joueurs', nb);%>
+<div class="button" id="update">Modifier</div>
