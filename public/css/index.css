@@ -1,0 +1,26 @@
+#root
+{
+	background-image: url('../images/bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+a#btn-matchs-list
+{
+	background-image: url('../images/ball.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:8em;
+}
+a#btn-joueurs-list
+{
+	background-image: url('../images/user.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:8em;
+}

@@ -1,0 +1,15 @@
+﻿<ul data-role="listview" data-inset="true">
+<% function field(type, id, label, value){%>
+	<li data-role="fieldcontain" id="<%=id%>">
+		<label class="ui-input-text" for="<%=id%>"><%=label %></label>
+		<input type="<%=type%>" name="<%=id%>" value="<%=value%>" placeholder="<%=label%>" />
+	</li>
+<% } %>
+<% field('text', 'PlayerNom', 'Nom', nom);%>
+<% field('text', 'PlayerPrenom', 'Prenom', prenom);%>
+<% field('text', 'PlayerEmail', 'Email', email);%>
+<% field('password', 'PlayerPwd', 'Password', '');%>
+<li data-role="fieldcontain">
+    <a href="#" id="update" class="button" type="button" data-ajax="false" data-role="button" data-inline="true" data-theme="c">Modifier</a>
+</li>
+</ul>

@@ -1,0 +1,16 @@
+﻿<ul data-role="listview" data-inset="true">
+<% function field(type, id, label, value){%>
+	<li data-role="fieldcontain" id="<%=id%>">
+		<label class="ui-input-text" for="<%=id%>"><%=label %></label>
+		<input type="<%=type%>" name="<%=id%>" value="<%=value%>" placeholder="<%=label%>" />
+	</li>
+<% } %>
+<% field('text', 'PlayerInitiales', 'Initiales Infomil', '');%>
+<% field('text', 'PlayerNom', 'Nom', '');%>
+<% field('text', 'PlayerPrenom', 'Prenom', '');%>
+<% field('text', 'PlayerEmail', 'Email', '');%>
+<% field('password', 'PlayerPwd', 'Password', '');%>
+<li data-role="fieldcontain">
+    <a href="#" id="addPlayer" class="button" type="button" data-ajax="false" data-role="button" data-inline="true" data-theme="c">Créer</a>
+</li>
+</ul>

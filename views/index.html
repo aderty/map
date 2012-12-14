@@ -1,0 +1,346 @@
+<% include header.html %>
+
+<div id="index" data-url="/index" data-role="page">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Map</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+	        <a id="btn-matchs-list" href="matchs-list" data-role="button">Matchs</a>
+	        <a id="btn-joueurs-list" href="joueurs-list" data-role="button">Joueurs</a>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="matchs-list" data-url="/matchs-list" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Matchs</h1>
+		<a href="matchs-filtre" data-icon="gear" class="ui-btn-right">Filtrer</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+	        <ul data-role="listview">
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Broken Bells</h3>
+				<p>Broken Bells</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Warning</h3>
+				<p>Hot Chip</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Wolfgang Amadeus Phoenix</h3>
+				<p>Phoenix</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Of The Blue Colour Of The Sky</h3>
+				<p>Ok Go</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Elephant</h3>
+				<p>The White Stripes</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Kid A</h3>
+				<p>Radiohead</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>XX</h3>
+				<p>XX</p>
+			</a></li>
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Congratulations</h3>
+				<p>MGMT</p>
+			</a></li>
+			
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Ashes Grammar</h3>
+				<p>A Sunny Day in Glasgow</p>
+			</a></li>
+			
+			<li><a href="match-info">
+				<img src="images/ball.png" />
+				<h3>Hot Fuss</h3>
+				<p>Killers</p>
+			</a></li>
+			<li><a href="match-info">	
+				<img src="images/ball.png" />
+				<h3>The Suburbs</h3>
+				<p>Arcade Fire</p>
+			</a></li>
+		</ul>
+		
+		<a id="btn-joueur-add" href="joueur-add" data-role="button">Ajouter une demande de match</a>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="joueurs-list" data-url="/joueurs-list" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Joueurs</h1>
+		<a href="joueurs-filtre" data-icon="gear" class="ui-btn-right">Filtrer</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+	        <ul data-role="listview">
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Broken Bells</h3>
+				<p>Broken Bells</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Warning</h3>
+				<p>Hot Chip</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Wolfgang Amadeus Phoenix</h3>
+				<p>Phoenix</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Of The Blue Colour Of The Sky</h3>
+				<p>Ok Go</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Elephant</h3>
+				<p>The White Stripes</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Kid A</h3>
+				<p>Radiohead</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>XX</h3>
+				<p>XX</p>
+			</a></li>
+			<li><a href="joueur-info">
+				<img src="images/user.png" />
+				<h3>Congratulations</h3>
+				<p>MGMT</p>
+			</a></li>
+		</ul>
+		<div data-role="fieldcontain">
+		    <a id="btn-match-add" href="match-add" data-role="button">Ajouter une demande de match</a>
+		</div>
+		
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="match-info" data-url="/match-info" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Info match</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+            <img src="images/ball.png" />
+            <h3>Match 1</h3>
+            <span>
+                Description
+                <a href="tel:0601234567"><img src="images/ball.png" /></a>
+            </span>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="joueur-info" data-url="/joueur-info" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Info joueur</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+            <img src="images/user.png" />
+            <h3>Joueur intel</h3>
+            <span>
+                Description
+            </span>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="match-add" data-url="/match-add" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Joueurs</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="joueur-add" data-url="/joueur-add" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Joueurs</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="matchs-filtre" data-url="/matchs-filtre" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Filter les matchs</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+            <div data-role="fieldcontain">
+                <div id="matchs-filtre-date" class="datepicker"></div>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>A partir de</legend>
+                    
+                    <label for="select-choice-month">Heure</label>
+                    <select name="select-choice-month" id="select-choice-month">
+                        <option value="12">Heure (12h par défaut)</option>
+                        <option value="9">9h</option>
+                        <option value="10">10h</option>
+                        <option value="11">11h</option>
+                        <option value="12">12h</option>
+                        <option value="13">13h</option>
+                        <option value="14">14h</option>
+                        <option value="15">15h</option>
+                        <option value="16">16h</option>
+                        <option value="17">17h</option>
+                        <option value="18">18h</option>
+                        <option value="19">19h</option>
+                        <option value="20">20h</option>
+                        <option value="21">21h</option>
+                        <option value="22">22h</option>
+                    </select>
+            
+                    <label for="select-choice-day">Min</label>
+                    <select name="select-choice-day" id="select-choice-day">
+                        <option value="0">Min (00 par défaut)</option>
+                        <option value="0">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                    </select>
+                </fieldset>
+	        </div>
+            <div data-role="fieldcontain">
+                <label for="selectNbPlaces">Places dispo</label>
+                <select name="select-places" id="selectNbPlaces">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="matchs-nb-visu">Affichage</label>
+                <input type="range" name="matchs-nb-visu" id="matchs-nb-visu" value="10" min="5" max="25" />
+            </div>
+            <div data-role="fieldcontain">
+	             <label for="filtre-matchs-tags">Mots clés</label>
+	             <input type="search" name="filtre-matchs-tags" id="filtre-matchs-tags" value=""  />
+			</div>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="joueurs-filtre" data-url="/joueurs-filtre" data-role="page" data-add-back-btn="true">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Filter les joueurs</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	    <section>
+            <div data-role="fieldcontain">
+                <div id="joueurs-filtre-date" class="datepicker"></div>
+            </div>
+            <fieldset data-role="fieldcontain">
+                <label for="selectNbJoueurs">Joueurs dispo</label>
+                <select name="select-joueurs" id="selectNbJoueurs">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="login" data-url="/login" data-role="dialog">
+    
+	<div data-role="header" data-theme="d">
+		<h1>Se connecter</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+		<section>
+	    </section>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!--<script src="/socket.io/socket.io.js"></script>-->
+    <script src="libs/underscore/underscore-min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <!--<script src="js/...js"></script>-->
+    <script>
+        $(document).on('mobileinit', function() {
+            console.log('mobileinit');
+            $.mobile.defaultDialogTransition = 'slide';
+            //$.mobile.hashListeningEnabled = false;
+        });
+    </script>
+    <script src="libs/jquery.mobile/jquery.mobile-1.2.0.js"></script>
+    <script src="libs/jquery/jquery.ui.datepicker.js"></script>
+    <script src="libs/jquery/jquery.ui.datepicker.mobile.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('ready');
+            $.mobile.changePage("#index");
+            $('.datepicker').datepicker();
+        });
+</script>
+
+<% include footer.html %>
