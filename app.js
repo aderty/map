@@ -128,7 +128,7 @@ function cleanLogin(req, res, next) {
     }
 }
 
-routes.init(app);
+//routes.init(app);
 
 // Routes
 app.get("/manifest.manifest", routes.manifest);
