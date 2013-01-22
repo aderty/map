@@ -5,11 +5,11 @@
  */
 var config = {
     db: {
-        db: 'psymap-dev',
+        db: '',
         host: 'ds043997.mongolab.com',
         port: 43997,  // optional, default: 27017
-        username: 'default', // optional
-        password: 'default' // optional
+        username: '', // optional
+        password: '' // optional
     },
     getConnectionString: function(){
         return 'mongodb://' + config.db.username+':'+config.db.password+'@' + config.db.host+':'+config.db.port + '/' + config.db.db;
@@ -66,7 +66,7 @@ app.configure(function(){
     app.use(express.static(__dirname + '/public', { maxAge: 0 }));
     //app.use(assetManager(routes.files));
     // Allow parsing cookies from request headers
-    this.use(express.cookieParser("psy, come on guy !!!"));
+    this.use(express.cookieParser(config.secret));
     // Session management
     // Internal session data storage engine, this is the default engine embedded with connect.
     // Much more can be found as external modules (Redis, Mongo, Mysql, file...). look at "npm search connect session store"
