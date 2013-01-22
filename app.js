@@ -81,7 +81,7 @@ app.configure(function(){
 
     app.use(express.bodyParser({uploadDir: __dirname}));
     app.use(express.methodOverride());
-    app.use(app.router);
+   // app.use(app.router);
     /*app.use(function(err, req, res, next){
         console.error(err.stack);
         res.send(500, 'Something broke!');
@@ -134,10 +134,10 @@ function cleanLogin(req, res, next) {
 app.get("/manifest.manifest", routes.manifest);
 /** Home page (requires authentication) */
 app.get('/', routes.index);
-app.get('/admin', routes.admin);
+/*app.get('/admin', routes.admin);
 app.get('/login', [cleanLogin], routes.login);
 app.post("/login", routes.loginPost);
-app.get('/js/templates.js', routes.templatejs);
+app.get('/js/templates.js', routes.templatejs);*/
 //app.post('/admin/rdv', routes.addRdv);
 
 if (!module.parent) {

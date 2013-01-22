@@ -10,10 +10,10 @@ NETWORK:
 CACHE:
 
 # html files
-login
+index
 
 favicon.ico
-socket.io/socket.io.js
+# socket.io/socket.io.js
 
 # css files
 css/index.css
