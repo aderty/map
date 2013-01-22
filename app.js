@@ -29,7 +29,7 @@ var express = require('express')
   //, RedisStore = require('connect-redis')(express)
   , MongoStore = require('connect-mongodb')
   , fs = require('fs')
-  , assetManager = require('connect-assetmanager')
+  //, assetManager = require('connect-assetmanager')
   , DAL = require('./data').DAL
   , PORT = process.env.PORT || 14800;
 
@@ -64,7 +64,7 @@ app.configure(function(){
         force: true // this forces the css to be regenerated on every pageview
     }));
     app.use(express.static(__dirname + '/public', { maxAge: 0 }));
-    app.use(assetManager(routes.files));
+    //app.use(assetManager(routes.files));
     // Allow parsing cookies from request headers
     this.use(express.cookieParser("psy, come on guy !!!"));
     // Session management
