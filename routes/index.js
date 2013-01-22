@@ -2,7 +2,7 @@
 var path = require('path')
   , ejs = require('ejs')
   , fs = require('fs')
-  , DAL = require('../data').DAL
+  //, DAL = require('../data').DAL
   , version = 1;
 
 exports.manifest = function (req, res) {
@@ -35,7 +35,7 @@ exports.login = function(req, res) {
 
 exports.loginPost = function (req, res) {
     var options = { title: "Probl&egrave;me de login", "username": req.body.username, "error": null };
-    if (!req.body.username) {
+    /*if (!req.body.username) {
         options.error = "User name is required";
         res.render("login", options);
         return;
@@ -72,7 +72,7 @@ exports.loginPost = function (req, res) {
                 }
             }
         });
-    }
+    }*/
 };
 
 exports.files = {
@@ -92,12 +92,12 @@ exports.admin = function(req, res) {
     if (req.session) {
         username = req.session.username;
     }
-    DAL.RdvList.findAll(function (err, rdv) {
+    /*DAL.RdvList.findAll(function (err, rdv) {
         res.render('admin', { title: 'Administration', rdv: rdv });
-    });  
+    }); */ 
 };
 
-(function (exports) {
+/*(function (exports) {
 
     "use strict";
 
@@ -124,7 +124,7 @@ exports.admin = function(req, res) {
         });
     };
 
-}(exports));
+}(exports));*/
 
 
 /*exports.addRdv = function (req, res) {
