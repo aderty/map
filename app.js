@@ -131,7 +131,7 @@ function cleanLogin(req, res, next) {
 routes.init(app);
 
 // Routes
-app.get("/rdvmap.manifest", routes.manifest);
+app.get("/manifest.manifest", routes.manifest);
 /** Home page (requires authentication) */
 app.get('/', routes.index);
 app.get('/admin', routes.admin);

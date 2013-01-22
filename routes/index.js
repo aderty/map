@@ -8,7 +8,7 @@ var path = require('path')
 exports.manifest = function (req, res) {
     res.header("Content-Type", "text/cache-manifest");
     res.header('Cache-Control', 'no-cache');
-    var ins = fs.createReadStream(path.join(__dirname, '../rdvmap.manifest'));
+    var ins = fs.createReadStream(path.join(__dirname, '../manifest.manifest'));
     ins.pipe(res);
 };
 
@@ -127,7 +127,7 @@ exports.admin = function(req, res) {
 }(exports));
 
 
-exports.addRdv = function (req, res) {
+/*exports.addRdv = function (req, res) {
     if (!req.body) return;
     DAL.RdvList.addRdv(req.body, function (id) {
         console.log(id);
@@ -140,4 +140,4 @@ exports.addRdv = function (req, res) {
         res.end(err);
         return;
     });
-};
+};*/
