@@ -1,4 +1,28 @@
 <% include header.html %>
+<div id="outer-wrap">
+<div id="inner-wrap">
+<nav id="nav" data-role="navigation" role="navigation">
+        <div class="block">
+            <h2 class="block-title">Chapters</h2>
+            <ul>
+                <li class="is-active">
+                    <a href="#matchs-list">Matchs</a>
+                </li><!--
+             --><li>
+                    <a href="#joueurs-list">Joueurs</a>
+                </li><!--
+             --><li>
+                    <a href="#">Mon compte</a>
+                </li><!--
+             --><li>
+                    <a href="#">D&eacute;connection</a>
+                </li>
+            </ul>
+            <a class="close-btn" id="nav-close-btn" href="javascript:void(0);">Return to Content</a>
+        </div>
+    </nav>
+    <div id="root" data-role="page">
+</div><!-- /page -->
 
 <div id="index" data-url="/index" data-role="page">
     
@@ -8,8 +32,8 @@
 
 	<div data-role="content" data-theme="c">	
 	    <section>
-	        <a id="btn-matchs-list" href="matchs-list" data-role="button">Matchs</a>
-	        <a id="btn-joueurs-list" href="joueurs-list" data-role="button">Joueurs</a>
+	        <a id="btn-matchs-list" href="#matchs-list" data-role="button">Matchs</a>
+	        <a id="btn-joueurs-list" href="#joueurs-list" data-role="button">Joueurs</a>
 	    </section>
 	</div><!-- /content -->
 
@@ -18,6 +42,8 @@
 <div id="matchs-list" data-url="/matchs-list" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a href="#index" data-icon="arrow-l" data-role="button">Back</a>
+	    <a class="nav-btn ui-btn-right" id="nav-open-btn" href="javascript:void();">Navigation</a>
 		<h1>Matchs</h1>
 		<a href="matchs-filtre" data-icon="gear" class="ui-btn-right">Filtrer</a>
 	</div><!-- /header -->
@@ -93,6 +119,8 @@
 <div id="joueurs-list" data-url="/joueurs-list" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a href="#index" data-icon="arrow-l" data-role="button">Back</a>
+	    <a class="nav-btn ui-btn-right" id="A1" href="javascript:void();">Navigation</a>
 		<h1>Joueurs</h1>
 		<a href="joueurs-filtre" data-icon="gear" class="ui-btn-right">Filtrer</a>
 	</div><!-- /header -->
@@ -153,6 +181,7 @@
 <div id="match-info" data-url="/match-info" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A2" href="javascript:void();">Navigation</a>
 		<h1>Info match</h1>
 	</div><!-- /header -->
 
@@ -172,6 +201,7 @@
 <div id="joueur-info" data-url="/joueur-info" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A3" href="javascript:void();">Navigation</a>
 		<h1>Info joueur</h1>
 	</div><!-- /header -->
 
@@ -190,6 +220,7 @@
 <div id="match-add" data-url="/match-add" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A4" href="javascript:void();">Navigation</a>
 		<h1>Joueurs</h1>
 	</div><!-- /header -->
 
@@ -204,6 +235,7 @@
 <div id="joueur-add" data-url="/joueur-add" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A5" href="javascript:void();">Navigation</a>
 		<h1>Joueurs</h1>
 	</div><!-- /header -->
 
@@ -218,6 +250,7 @@
 <div id="matchs-filtre" data-url="/matchs-filtre" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A6" href="javascript:void();">Navigation</a>
 		<h1>Filter les matchs</h1>
 	</div><!-- /header -->
 
@@ -285,6 +318,7 @@
 <div id="joueurs-filtre" data-url="/joueurs-filtre" data-role="page" data-add-back-btn="true">
     
 	<div data-role="header" data-theme="d">
+	    <a class="nav-btn ui-btn-right" id="A7" href="javascript:void();">Navigation</a>
 		<h1>Filter les joueurs</h1>
 	</div><!-- /header -->
 
@@ -320,11 +354,12 @@
 	</div><!-- /content -->
 
 </div><!-- /page -->
-
+<script src="libs/modernizr.js"></script>
 <!--<script src="/socket.io/socket.io.js"></script>-->
     <script src="libs/underscore/underscore-min.js"></script>
     <script src="libs/jquery/jquery.min.js"></script>
     <!--<script src="js/...js"></script>-->
+    <script src="js/nav.js"></script>
     <script>
         $(document).on('mobileinit', function() {
             console.log('mobileinit');
@@ -342,5 +377,6 @@
             $('.datepicker').datepicker();
         });
 </script>
-
+</div>
+</div>
 <% include footer.html %>
